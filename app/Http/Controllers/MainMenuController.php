@@ -15,7 +15,7 @@ class MainMenuController extends Controller
      */
     public function index()
     {
-
+        dd('index');
     }
 
     /**

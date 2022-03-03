@@ -18,7 +18,12 @@ class SubTwoMenuSeeder extends Seeder
         for ($i = 1; $i <= 10; $i++) {
             SubTwoMenu::create([
                 'sub_one_menu_id' => SubOneMenu::all()->random()->id,
-                'name' => 'SubTwoMenu - ' . $i
+                'name_az' => 'SubTwoMenu_az - ' . $i,
+                'name_en' => 'SubTwoMenu_en - ' . $i,
+                'name_ru' => 'SubTwoMenu_ru - ' . $i,
+                'slug_az' => str_slug('SubTwoMenu_az - ' . $i),
+                'slug_en' => str_slug('SubTwoMenu_en - ' . $i),
+                'slug_ru' => str_slug('SubTwoMenu_ru - ' . $i)
             ]);
         }
     }

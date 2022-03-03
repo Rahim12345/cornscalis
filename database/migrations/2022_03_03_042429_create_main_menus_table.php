@@ -15,7 +15,12 @@ class CreateMainMenusTable extends Migration
     {
         Schema::create('main_menus', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name_az');
+            $table->string('name_en');
+            $table->string('name_ru');
+            $table->string('slug_az');
+            $table->string('slug_en');
+            $table->string('slug_ru');
             $table->timestamps();
         });
     }

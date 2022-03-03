@@ -16,7 +16,12 @@ class CreateSubTwoMenusTable extends Migration
         Schema::create('sub_two_menus', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('sub_one_menu_id');
-            $table->string('name');
+            $table->string('name_az');
+            $table->string('name_en');
+            $table->string('name_ru');
+            $table->string('slug_az');
+            $table->string('slug_en');
+            $table->string('slug_ru');
             $table->timestamps();
 
             $table->foreign('sub_one_menu_id')

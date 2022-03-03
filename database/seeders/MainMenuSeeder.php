@@ -16,7 +16,12 @@ class MainMenuSeeder extends Seeder
     {
         for ($i = 1; $i <= 3; $i++) {
             MainMenu::create([
-                'name' => 'MainMenu - ' . $i
+                'name_az' => 'MainMenu_az - ' . $i,
+                'name_en' => 'MainMenu_en - ' . $i,
+                'name_ru' => 'MainMenu_ru - ' . $i,
+                'slug_az' => str_slug('MainMenu_az - ' . $i),
+                'slug_en' => str_slug('MainMenu_en - ' . $i),
+                'slug_ru' => str_slug('MainMenu_ru - ' . $i)
             ]);
         }
     }

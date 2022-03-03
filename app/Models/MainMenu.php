@@ -11,7 +11,14 @@ class MainMenu extends Model
 
     protected $table = 'main_menus';
 
-    protected $fillable = ['name'];
+    protected $fillable = [
+        'name_az',
+        'name_en',
+        'name_ru',
+        'slug_az',
+        'slug_en',
+        'slug_ru'
+    ];
 
     public function sub_one_menus()
     {
