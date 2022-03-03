@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\MainMenu;
 use Illuminate\Database\Seeder;
 
 class MainMenuSeeder extends Seeder
@@ -13,6 +14,10 @@ class MainMenuSeeder extends Seeder
      */
     public function run()
     {
-        //
+        for ($i = 1; $i <= 3; $i++) {
+            MainMenu::create([
+                'name' => 'MainMenu - ' . $i
+            ]);
+        }
     }
 }

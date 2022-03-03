@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MainMenu;
-use App\Http\Requests\StoreMainMenuRequest;
-use App\Http\Requests\UpdateMainMenuRequest;
+use App\Models\SubOneMenu;
+use App\Http\Requests\StoreSubOneMenuRequest;
+use App\Http\Requests\UpdateSubOneMenuRequest;
 
-class MainMenuController extends Controller
+class SubOneMenuController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class MainMenuController extends Controller
      */
     public function index()
     {
-
+        //
     }
 
     /**
@@ -31,10 +31,10 @@ class MainMenuController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreMainMenuRequest  $request
+     * @param  \App\Http\Requests\StoreSubOneMenuRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreMainMenuRequest $request)
+    public function store(StoreSubOneMenuRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class MainMenuController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MainMenu  $mainMenu
+     * @param  \App\Models\SubOneMenu  $subOneMenu
      * @return \Illuminate\Http\Response
      */
-    public function show(MainMenu $mainMenu)
+    public function show(SubOneMenu $subOneMenu)
     {
         //
     }
@@ -53,10 +53,10 @@ class MainMenuController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\MainMenu  $mainMenu
+     * @param  \App\Models\SubOneMenu  $subOneMenu
      * @return \Illuminate\Http\Response
      */
-    public function edit(MainMenu $mainMenu)
+    public function edit(SubOneMenu $subOneMenu)
     {
         //
     }
@@ -64,11 +64,11 @@ class MainMenuController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateMainMenuRequest  $request
-     * @param  \App\Models\MainMenu  $mainMenu
+     * @param  \App\Http\Requests\UpdateSubOneMenuRequest  $request
+     * @param  \App\Models\SubOneMenu  $subOneMenu
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMainMenuRequest $request, MainMenu $mainMenu)
+    public function update(UpdateSubOneMenuRequest $request, SubOneMenu $subOneMenu)
     {
         //
     }
@@ -76,10 +76,10 @@ class MainMenuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MainMenu  $mainMenu
+     * @param  \App\Models\SubOneMenu  $subOneMenu
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MainMenu $mainMenu)
+    public function destroy(SubOneMenu $subOneMenu)
     {
         //
     }
